@@ -106,7 +106,7 @@ class Pusher(object):
 
         if socket_id and key and channel_name and secret:
             subject = "%s:%s" % (socket_id, channel_name)
-            h = hmac.new(secret, subject, hashlib.sha256)
+            h = hmac.new(secret.encode("utf-8"), subject.encode("utf-8"), hashlib.sha256)
             auth_key = "%s:%s" % (key, h.hexdigest())
 
         return auth_key

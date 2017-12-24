@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/nlsdfnbch/Pysher.svg?branch=master)](https://travis-ci.org/nlsdfnbch/Pysher)
 Pysher
 =============
 
